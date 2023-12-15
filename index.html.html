@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(1, 0, 1, 0.75),rgba(0,0,0,0.75)),url(p2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative ;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    /* width: 100%; */
+    width: 0;
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+}
+.navbar ul li :hover::after{
+    width: 100%;
+
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #faf9fa;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px  auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid #fcfafb;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+}
+.gold{
+    /* margin: 60px 40px 10px 00px; */
+}
+.Reels,.Memes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px ;
+}
+.r1,.r2,.r3,.r4,.r5,.r6{
+    width: 100%;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(208, 208, 208);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 50px ;
+    
+}
+.r1 img,.r2 img,.r3 img,.r4 img,.r5 img,.r6 img{
+    width: 100%;
+    height: 200px;
+    border-radius: 40px;
+    /* object-fit: contain;
+    object-position: center;
+    margin: auto; */
+
+}
+.r1 strong,.r2 strong,.r3 strong,.r4 strong,.r5 strong,.r6 strong{
+    color:black;
+    /* font-size: 1.1rem; */
+    /* letter-spacing: 2px; */
+    /* font-weight: 900; */
+    margin-top: 0px;
+}
+/* .r1  .follow,.r2  .follow,.r3 .follow{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+} */
+.r1 .cart,.r2 .cart,.r3 .cart,.r4 .cart,.r5 .cart,.r6 .cart{
+    width: 100%;
+    height: 40px;
+    background-color:rgb(56, 56, 251);
+    border-radius: 20px;
+    color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: all ease 0.3s;
+    text-decoration: none;
+}
+.r1 .cart:hover,.r2 .cart:hover,.r3 .cart:hover,.r4 .cart:hover,.r5 .cart:hover,.r6 .cart:hover{
+    background-color:rgb(95, 90, 251);
+    color:rgb(0, 0, 0);
+    transition: all ease 0.3s;
+}
+.s1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1150px;
+    margin: 0px auto;
+    padding: 40px 150px 60px 80px;
+    border-radius: 0px;
+    /* background-color:brown; */
+    background-image: linear-gradient(rgba(1, 0, 1, 0.75),rgba(0,0,0,0.75)),url(p2.jpeg);
+    border: 0px solid rgb(255, 255, 255);
+    align-items: center;
+}
+/* .f1{
+    background-color: rgb(93, 92, 92);
+    height: 10px;
+    width:100vm;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    
+
+} */
+    </style>
+</head>
+
+<body>
+    <!-- <img src="efg.png" alt="plzz Check" width="100%"> -->
+    <div class="banner">
+        <div class="navbar">
+            <img src="p4.png" class="logo"> 
+            <!-- <input type="text" id="Scarch" placeholder="      Scarch..." name="search">  -->
+            <ul>
+                <li><a href="#" target="_blank"><b>Trending</b></a></li>
+                <li><a href="#" target="_blank"><b>Memes</b></a></li>
+                <li><a href="#" target="_blank"><b>Moto Vlogging</b></a></li>
+                <li><a href="#" target="_blank"><b>News</b></a></li>
+                <li><a href="#" target="_blank"><b>Gaming</b></a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Reels<br>Entertainment</h1>
+            <P>Entha edathula ethavathu type pannanum apo tha site paakurathuku clr ra 
+                eruku<br> ana ena type panna nu thiiriyala atha thiriyalanu type pannura mam sry</P>
+                <button type="button">LOGIN</button>
+                <button type="button">NEW USER </button>
+    
+        </div>
+        
+        </div>
+        <section class="s1">
+            <!-- <h2>REELS</h2> -->
+            <dev class="gold">
+        <div class="Reels" id="id0">
+            <div class="r1" id="id1">
+            <img src="r1.jpg" alt="pack1">
+            <strong>s_suhail_</strong>
+            <span class="follow">14.2M<sup></sup></span>
+            <a href="#" class="cart">Follow</a>
+        </div> 
+        <div class="r2" id="id2">
+            <img src="r2.jpg" alt="pack1">
+            <strong>golduuu___</strong>
+            <span class="follow">9.1M</span>
+            <a href="#" class="cart">Follow</a>
+        </div> 
+        <div class="r3" id="id3">
+            <img src="r3.jpg" alt="pack1">
+            <strong>iveejnaris_v</strong>
+            <span class="follow">10.1M</span>
+            <a href="#" class="cart">Follow</a>
+        </div> 
+    </div> 
+    <!-- <h3>MEMES</h3> -->
+        <div class="Memes" id="id1">
+        <div class="r4" id="id5">
+            <img src="r4.jpg" alt="pack1">
+            <strong>shifa_neinu</strong>
+            <span class="follow">11.8M</span>
+            <a href="#" class="cart">Follow</a>
+        </div> 
+        <div class="r5" id="id6">
+            <img src="r5.jpg" alt="pack1">
+            <strong>kochi23e</strong>
+            <span class="follow">12.8M</span>
+            <a href="#" class="cart">Follow</a>
+        </div> 
+        <div class="r6" id="id7">
+            <img src="r6.jpg" alt="pack1">
+            <strong>linz_joe</strong>
+            <span class="follow">10.1M</span>
+            <a href="#" class="cart">Follow</a>
+        </div> 
+    </div>  </dev></section>
+    <!-- <footer>
+        <div class="f1">
+            <h3>Thank you...!!!<br></h3>
+        </div>
+
+    </footer> -->
+</body>
+</html>
+
